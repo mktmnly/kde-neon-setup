@@ -5,7 +5,7 @@ echo "Allowing MAN-DB to Auto-Update..."; sleep 3
 sudo touch /var/lib/man-db/auto-update; clear
 
 # System Update #
-echo "Bringing System Current..."; sleep3
+echo "Bringing System Current..."; sleep 3
 sudo apt update; sudo apt dist-upgrade; clear
 
 # Enable Backports #
