@@ -26,7 +26,6 @@ sudo apt update; sudo apt dist-upgrade; sleep 3; clear
 echo "Enabling PPAs..."; sleep 3
 sudo add-apt-repository ppa:appimagelauncher-team/stable
 sudo add-apt-repository ppa:damentz/liquorix
-sudo add-apt-repository ppa:inkscape.dev/stable
 sudo add-apt-repository ppa:libretro/stable
 sudo add-apt-repository ppa:obsproject/obs-studio
 sudo add-apt-repository ppa:wereturtle/ppa
