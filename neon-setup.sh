@@ -31,6 +31,11 @@ sudo add-apt-repository ppa:obsproject/obs-studio
 sudo add-apt-repository ppa:wereturtle/ppa
 sleep 3; clear
 
+# Enable Darktable Release Repo (OBS) ##
+echo 'deb http://download.opensuse.org/repositories/graphics:/darktable/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/graphics:darktable.list
+curl -fsSL https://download.opensuse.org/repositories/graphics:darktable/xUbuntu_20.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/graphics_darktable.gpg > /dev/null
+sudo apt update; sleep 3; clear
+
 # Enable i386 Support (Steam) #
 echo "Enabling Multi-Arch Support for Steam..."; sleep 3
 sudo dpkg --add-architecture i386; sleep 3; clear
@@ -48,7 +53,6 @@ sleep 3; clear
 # Install Manual Packages #
 echo "Installing Manual Packages..."; sleep 3
 mkdir -p ManualPackages/; cd ManualPackages/
-wget https://download.opensuse.org/repositories/graphics:/darktable/xUbuntu_20.04/amd64/darktable_3.8.1-1.1_amd64.deb
 wget http://ftp.us.debian.org/debian/pool/main/p/pygtk/python-gtk2_2.24.0-5.1+b1_amd64.deb
 wget http://ftp.us.debian.org/debian/pool/main/g/gimp/gimp-python_2.10.8-2_amd64.deb
 wget https://www.hamrick.com/files/vuex6497.deb
