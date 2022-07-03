@@ -42,7 +42,7 @@ sudo apt update; sudo apt dist-upgrade; sleep 3; clear
 # Install Packages #
 echo "Installing Packages..."; sleep 3
 sudo apt update; sudo apt full-upgrade
-sudo apt install ack argyll audacity build-essential darktable gimp gimp-gmic gimp-lensfun gimp-plugin-registry gimp-texturize htop inkscape inxi kate kdenlive krita ktorrent neofetch obs-studio retroarch
+sudo apt install ack argyll audacity build-essential darktable gimp gimp-gmic gimp-lensfun gimp-plugin-registry gimp-texturize htop inkscape inxi kate kdenlive krita ktorrent libreoffice neofetch obs-studio retroarch
 sleep 3; clear
 
 # Install Manual Packages #
@@ -78,4 +78,5 @@ sudo apt-get install linux-image-liquorix-amd64 linux-headers-liquorix-amd64
 sleep 3; clear
 
 # Finishing Touches #
+sudo apt autoremove
 echo "Don't forget to Reboot!"
