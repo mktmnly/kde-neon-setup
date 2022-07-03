@@ -32,7 +32,7 @@ sudo add-apt-repository ppa:wereturtle/ppa
 sleep 3; clear
 
 # Enable i386 Support (Steam) #
-echo "Enabling Multi-Arch Support for Steam"; sleep 3
+echo "Enabling Multi-Arch Support for Steam..."; sleep 3
 sudo dpkg --add-architecture i386; sleep 3; clear
 
 # System Update (Sanity Check) #
@@ -52,7 +52,7 @@ wget https://download.opensuse.org/repositories/graphics:/darktable/xUbuntu_20.0
 wget http://ftp.us.debian.org/debian/pool/main/p/pygtk/python-gtk2_2.24.0-5.1+b1_amd64.deb
 wget http://ftp.us.debian.org/debian/pool/main/g/gimp/gimp-python_2.10.8-2_amd64.deb
 wget https://www.hamrick.com/files/vuex6497.deb
-sudo apt install *.deb
+sudo apt install ./*.deb
 cd ..
 sleep 3; clear
 
